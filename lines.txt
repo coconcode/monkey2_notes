@@ -1,0 +1,53 @@
+In this section there will be some thoughts on how is it better to break or split lines.
+
+Examples
+
+	* Arrays
+
+		Here placing closing parentheses in a new line is useful for giving a visual clue
+		where the array declaration section ends, thus that way forming a block section.
+		Also keeping the very last comma helps in some cases of swapping or commenting elements,
+		without having to do more edits.
+		
+		Global array := New String[] (
+			"Alpha",
+			"Beta",
+			"Gamma",
+		)
+		
+		This is inspired from Python
+		
+			items = [
+				1,
+				2,
+				3,
+			]
+
+			print(items)
+		
+	
+	* Functions
+
+		In the same way as the [Arrays] example.
+
+		Function TestFunction(
+			a1:Int, a2:Int, a3:Int, a4:Int,
+			b1:Int, b2:Int, b3:Int, b4:Int,
+			c1:Int, c2:Int, c3:Int, c4:Int,
+			d1:Int, d2:Int, d3:Int, d4:Int
+		)
+		
+			Print("Boost!"
+			
+		End
+		
+		
+		This is something as well inspired from Python
+
+			def action(
+				a,b,
+				c,d,
+			):
+				print("OK")
+
+			action(1,2,3,4)
