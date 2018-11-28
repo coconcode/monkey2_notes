@@ -1,0 +1,55 @@
+One good idea is to have the ability to use free style block commenting. There might be very reasons of why might seem a good idea to use block comments but the general idea is to have more control over the syntax.
+
+Block comments might be initiated with one of these possibly sequences:
+	
+	triple single-quote
+		''' BLOCK COMMENT '''
+		this might be a good choice since it builds on top of the existing convention
+
+	single quote with asterisk
+		'* BLOCK COMMENT *'
+		this might be a good choice since it builds on top of the existing convention
+
+	similar to Pascal
+		{* BLOCK COMMENT *} 
+		this might be a good choice in terms of historical reference
+
+	similar to Wolfram Alpha
+		(* BLOCK COMMENT *)
+		this looks like a very good choice as well and perhaps the
+		most handy and useful since all of these keys are very close together (8 9 0)
+		https://reference.wolfram.com/language/guide/Syntax.html
+
+
+In this example there will be normal line comments but also block comments.
+
+	Class Person
+
+		' Normal Line Comments
+		Field Name   : String ' Person's name
+		Field Age    : Int    ' Person's age
+		Field Height : Int    ' Person's height
+
+		' Special Block Comments
+
+		' in this example you want to promote commenting
+		' in front of the programming language syntax
+		'* Optional Parameter *' Field Option1 : Byte
+		'* Optional Parameter *' Field Option2 : Byte
+
+		' or in this case you want the variable+type+comment
+		' without needing to pay attention to '
+		Field ValueA : String '* used when Option1 is set *' = ""
+		Field ValueB : String '* used when Option2 is set *' = ""
+
+	End
+
+In this example there will be some way of block out bits of code.
+
+	Function Test('* not needed ... a:Int , b:Int, c:Int, d:Int *')
+		'*
+			this piece is used only once
+			For Local i := 0 Until 100000000
+			Next
+		*'
+	End
