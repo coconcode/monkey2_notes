@@ -1,0 +1,28 @@
+In this case there is the suggestion to have a special preprocessor tag named [#Region] that will allow to "virtualy" split the code into user-defined sections. This will allow in some cases better organization of the code in design presentation terms. By grouping related elements together and forming sections of strong relevance the programmer might have the ability to create more well defined code within a file.
+
+Notes:
+* In this example the suggested tag is [#Region], however any other possible alternatives can be considered as well.
+* This feature to be fully realized depends on support from IDE or text editors. But at least firstly there is the need for establishing it clearly in the specifications of the programming language.
+
+```
+#Region Functions from category [A]
+Function A1()
+End
+
+Function A2()
+End
+
+Function A2()
+End
+#End
+
+#Region Functions from category [B]
+Function B1()
+End
+
+Function B2()
+End
+
+Function B2()
+End
+#End
