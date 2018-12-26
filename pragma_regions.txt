@@ -1,3 +1,13 @@
+Notes:
+  *   This might be deprecated in favor of metacomments.
+      The cost of this implementation is that requires
+      more work on the parser side, but overall offers a more
+      principled and polished look on the language.
+      
+      While metacomments on the other hand would be considered
+      as a "hack" to get things done within the existing features.
+  
+
 In this case there is the suggestion to have a special preprocessor tag named [#Region] that will allow to "virtualy" split the code into user-defined sections. This will allow in some cases better organization of the code in design presentation terms. By grouping related elements together and forming sections of strong relevance the programmer might have the ability to create more well defined code within a file.
 
 Notes:
