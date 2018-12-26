@@ -1,0 +1,60 @@
+Normally the point of normal comments is to be ignored
+and in another case of where #Rem style comments are used
+only for documentation purposes.
+
+This is a special case of where meta comments might work
+exactly as normal comments would, but more specifically,
+provide a standard convention on signifying and describing
+various important information regarding the code state.
+
+The idea is to have a special character (like #) to signify
+the meta comment keyword, and then have various utilities
+in the Monkey2 system handle these as needed.
+
+Some example of such useful operations would be:
+
+1. Folding the code into regions:
+
+	'#region Name of the region
+	'#endregion
+	
+	Note: This is a feature that must be supported
+	from the IDE first and foremost, but the idea
+	here is to establish the convention.
+	
+2. Cutting the code into different topics (or chapters):
+
+	'#topic Name of the topic
+	' various functions on this topic
+	
+	'#topic Name of another topic
+	' various other functions as well
+	
+	Note: This is a case of where the IDE would draw
+	a line over the screen, in some sense is very
+	similar to #region but without the need to enclose something.
+	
+3. Shorter documentation
+
+	'#doc Adding two numbers
+	Function AddTwo(a:Int, b:Int)
+		Return a + b
+	End
+	
+	Note: This is an alternative way to provide
+	documentation for the code in a more compact fashion
+	(a one-liner), while on the other hand #Rem 
+	needs three lines by default.
+	
+	In a special case of where the documetation needs
+	two be expanded in more than one lines, can be written as this.
+		
+	'#doc Adds two numbers together.
+	'#doc Takes two integer numbers as input parameters
+	'#doc adds them together and returns a new integer result.
+	Function AddTwo(a:Int, b:Int)
+		Return a + b
+	End
+
+4. The idea of this notation is to be used in
+a lot of other and different circumstances.
